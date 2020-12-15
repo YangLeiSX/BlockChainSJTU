@@ -1,0 +1,74 @@
+digraph tree {
+	rankdir = LR
+	"#ffffffff\nminer#65535" [ color = black ]
+	"#4c61dff9\nminer#3" [ color = black ]
+	"#7b24ca26\nminer#7" [ color = black ]
+	"#3e3b208d\nminer#18" [ color = black ]
+	"#7a868b1a\nminer#1" [ color = black ]
+	"#56632bd0\nminer#12" [ color = black ]
+	"#23fba18d\nminer#16" [ color = black ]
+	"#4a23caff\nminer#5" [ color = black ]
+	"#7d2b30b5\nminer#0" [ color = black ]
+	"#2e305d36\nminer#12" [ color = black ]
+	"#340d9d91\nminer#10" [ color = black ]
+	"#10da1d67\nminer#7" [ color = black ]
+	"#7ef0094c\nminer#6" [ color = black ]
+	"#223fc8bc\nminer#10" [ color = black ]
+	"#01ab1d53\nminer#9" [ color = black ]
+	"#3ef86a6f\nminer#5" [ color = black ]
+	"#79c1383e\nminer#5" [ color = black ]
+	"#3151a64f\nminer#3" [ color = black ]
+	"#6db99175\nminer#14" [ color = black ]
+	"#4d9f4c50\nminer#14" [ color = black ]
+	"#5aae98c8\nminer#12" [ color = black ]
+	"#6abaddcd\nminer#0" [ color = black ]
+	"#2dd5828b\nminer#17" [ color = black ]
+	"#66bc2f29\nminer#14" [ color = black ]
+	"#46af182e\nminer#0" [ color = black ]
+	"#59a981a2\nminer#4" [ color = black ]
+	"#21720986\nminer#14" [ color = black ]
+	"#2ec942f6\nminer#2" [ color = black ]
+	"#0f4f8e2d\nminer#7" [ color = black ]
+	"#2556892d\nminer#6" [ color = black ]
+	"#1a8c94fd\nminer#12" [ color = black ]
+	"#43bffb76\nminer#7" [ color = black ]
+	"#6ed60583\nminer#0" [ color = black ]
+	"#1548ed7e\nminer#14" [ color = black ]
+	"#6f11d335\nminer#5" [ color = black ]
+	"#6f144069\nminer#17" [ color = black ]
+	"#ffffffff\nminer#65535" -> "#4c61dff9\nminer#3"
+	"#4c61dff9\nminer#3" -> "#7b24ca26\nminer#7"
+	"#7b24ca26\nminer#7" -> "#3e3b208d\nminer#18"
+	"#3e3b208d\nminer#18" -> "#7a868b1a\nminer#1"
+	"#7a868b1a\nminer#1" -> "#56632bd0\nminer#12"
+	"#56632bd0\nminer#12" -> "#23fba18d\nminer#16"
+	"#23fba18d\nminer#16" -> "#4a23caff\nminer#5"
+	"#4a23caff\nminer#5" -> "#7d2b30b5\nminer#0"
+	"#7d2b30b5\nminer#0" -> "#2e305d36\nminer#12"
+	"#2e305d36\nminer#12" -> "#340d9d91\nminer#10"
+	"#340d9d91\nminer#10" -> "#10da1d67\nminer#7"
+	"#10da1d67\nminer#7" -> "#7ef0094c\nminer#6"
+	"#7ef0094c\nminer#6" -> "#223fc8bc\nminer#10"
+	"#223fc8bc\nminer#10" -> "#01ab1d53\nminer#9"
+	"#01ab1d53\nminer#9" -> "#3ef86a6f\nminer#5"
+	"#3ef86a6f\nminer#5" -> "#79c1383e\nminer#5"
+	"#79c1383e\nminer#5" -> "#3151a64f\nminer#3"
+	"#3151a64f\nminer#3" -> "#6db99175\nminer#14"
+	"#6db99175\nminer#14" -> "#4d9f4c50\nminer#14"
+	"#4d9f4c50\nminer#14" -> "#5aae98c8\nminer#12"
+	"#5aae98c8\nminer#12" -> "#6abaddcd\nminer#0"
+	"#6abaddcd\nminer#0" -> "#2dd5828b\nminer#17"
+	"#2dd5828b\nminer#17" -> "#66bc2f29\nminer#14"
+	"#66bc2f29\nminer#14" -> "#46af182e\nminer#0"
+	"#46af182e\nminer#0" -> "#59a981a2\nminer#4"
+	"#59a981a2\nminer#4" -> "#21720986\nminer#14"
+	"#21720986\nminer#14" -> "#2ec942f6\nminer#2"
+	"#2ec942f6\nminer#2" -> "#0f4f8e2d\nminer#7"
+	"#0f4f8e2d\nminer#7" -> "#2556892d\nminer#6"
+	"#2556892d\nminer#6" -> "#1a8c94fd\nminer#12"
+	"#1a8c94fd\nminer#12" -> "#43bffb76\nminer#7"
+	"#43bffb76\nminer#7" -> "#6ed60583\nminer#0"
+	"#6ed60583\nminer#0" -> "#1548ed7e\nminer#14"
+	"#1548ed7e\nminer#14" -> "#6f11d335\nminer#5"
+	"#6f11d335\nminer#5" -> "#6f144069\nminer#17"
+}

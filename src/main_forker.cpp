@@ -1,7 +1,7 @@
 /**
  * @file main_forker.cpp
  * @author YangLei (YangLeiSX@sjtu.edu.cn)
- * @brief 
+ * @brief Main File for Fork Attack Simulation
  * @version 0.1
  * @date 2020-12-10
  * 
@@ -30,12 +30,19 @@ std::mutex display;
 // System On/Off
 bool running = true;
 int roundIdx;
+// Random Engine
 std::default_random_engine randeng;
+// Attackers id
 std::set<usr_id> forkers;
 
 static std::vector<std::thread> thread_list;
 
-// Check Round Flags
+/**
+ * @brief Check if Every thread is OK
+ * 
+ * @return true All thread is  OK
+ * @return false Not OK, Wait
+ */
 bool isRoundReady() {
     bool res = true;
     for (int i = 0; i < MAX_PLAYER; i++) {

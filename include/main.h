@@ -1,7 +1,7 @@
 /**
  * @file main.h
  * @author yanglei (yangliesx@sjtu.edu.cn)
- * @brief 
+ * @brief Parameters in Simulation
  * @version 0.1
  * @date 2020-12-09
  * 
@@ -28,9 +28,10 @@
 #define BEGIN_FORK(round) (round >= static_cast<int>(MAX_ROUND * FORK_ROUND))
 
 // Selfish Mining
-#define SELFISH_RATE 0.4
+#define SELFISH_RATE 0.1
 #define NORMAL_RATE (1 - SELFISH_RATE)
 #define SELFISH_LEN 3
+
 // Macros for visualization
 #define OUTPUT_PATH "./result.csv"
 
@@ -38,6 +39,5 @@
 typedef uint32_t blk_id;
 typedef uint16_t usr_id;
 typedef uint16_t nonce_t;
-
 
 #endif  // MAIN_H_

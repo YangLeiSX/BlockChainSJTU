@@ -1,7 +1,7 @@
 /**
  * @file blockchain.hpp
  * @author yanglei (yangleisx@sjtu.edu.cn)
- * @brief 
+ * @brief Definition of BlockChain
  * @version 0.1
  * @date 2020-12-09
  * 
@@ -19,6 +19,10 @@
 #include "./main.h"
 #include "./block.h"
 
+/**
+ * @brief Definition of Block Chain
+ * 
+ */
 class BlockChain{
  private:
     // blocks in the chain
@@ -30,9 +34,7 @@ class BlockChain{
     // add a new block
     void growth(Block blk) {
         cont_map.insert(std::pair<blk_id, int>(blk.idx, content.size()));
-        // cont_map[blk.idx] = content.size();
         content.emplace_back(blk);
-        // content.push_back(blk);
     }
     // remove a block from tail
     Block shorten() {

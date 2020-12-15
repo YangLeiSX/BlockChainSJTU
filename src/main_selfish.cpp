@@ -1,7 +1,7 @@
 /**
  * @file main_selfish.cpp
  * @author YangLei (YangLeiSX@sjtu.edu.cn)
- * @brief 
+ * @brief Main File for Selfish Mining Attack Simulation
  * @version 0.1
  * @date 2020-12-10
  * 
@@ -33,11 +33,17 @@ std::mutex display;
 // System On/Off
 bool running = true;
 int roundIdx;
+// Attackers id
 std::set<usr_id> selfisher;
 
 static std::vector<std::thread> thread_list;
 
-// Check Round Flags
+/**
+ * @brief Check if Every thread is OK
+ * 
+ * @return true All thread is OK
+ * @return false Not OK, Wait
+ */
 bool isRoundReady() {
     bool res = true;
     for (int i = 0; i < MAX_PLAYER; i++) {

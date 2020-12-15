@@ -1,7 +1,7 @@
 /**
  * @file normal.h
  * @author YangLei (YangLeiSX@sjtu.edu.cn)
- * @brief 
+ * @brief Definition of Normal Client in Selfish Mining Attack
  * @version 0.1
  * @date 2020-12-10
  * 
@@ -16,8 +16,14 @@
 
 #include "./client.h"
 
+/**
+ * @brief Definition of Normal Client in Selfish Mining Attack.
+ * Inherit from Class Client
+ * 
+ */
 class Normal : public Client {
  protected:
+    // Overloaded Function
     void saveBlockChain();
 
  public:

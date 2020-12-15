@@ -1,7 +1,7 @@
 /**
  * @file semaphore.h
  * @author Yang Lei (yangleisx@sjtu.edu.cn)
- * @brief Semaphore for data transfer
+ * @brief Definition of Semaphore for Data Sharing
  * @version 0.1
  * @date 2020-12-03
  * 
@@ -15,6 +15,10 @@
 #include <mutex>
 #include <condition_variable>
 
+/**
+ * @brief Definition of Semaphore for Data Sharing
+ * 
+ */
 class semaphore {
  public:
     // construction function
@@ -45,6 +49,6 @@ class semaphore {
     int wakeups;
     std::mutex m;
     std::condition_variable condition;
-};  // class semaphore
+};
 
 #endif  // SEMAPHORE_H_

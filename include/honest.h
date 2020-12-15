@@ -1,7 +1,7 @@
 /**
  * @file honest.h
  * @author YangLei (YangLeiSX@sjtu.edu.cn)
- * @brief 
+ * @brief Definition of Honest Client in Fork Attack
  * @version 0.1
  * @date 2020-12-10
  * 
@@ -16,12 +16,19 @@
 
 #include "./client.h"
 
+/**
+ * @brief Definition of Honest Client in Fork Attack.
+ * Inherit from Class Client
+ * 
+ */
 class Honest : public Client {
  protected:
+    // Record Successful Fork Attack
     std::vector<int> forkLen;
+    // Overloaded Function
     void displayBlockChain();
     void saveBlockChain();
-
+    // Record Fork Attack
     void checkFork();
 
  public:

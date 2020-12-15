@@ -1,7 +1,7 @@
 /**
  * @file selfish.h
  * @author Yang Lei (yangleisx@sjtu.edu.cn)
- * @brief 
+ * @brief Definition of Attacker in Selfish Mining Attack
  * @version 0.1
  * @date 2020-12-10
  * 
@@ -17,21 +17,28 @@
 
 #include "./client.h"
 
+/**
+ * @brief Definition of Attacker in Selfish Mining Attach
+ * Inherit from Class Client
+ * 
+ */
 class Selfish : public Client {
  protected:
+    // Counter of Successful Attack
     int win;
+    // Store Reserved Blocks
+    std::vector<Block> reserve;
+
+    // Auxiliary Function for Synchronization in Secret Channel
     void SecretSynchro(std::vector<Block> &recv);
     void SecretMerge(blk_id target);
-
+    // Overloaded Function
     void synchro(std::vector<Block> &recv);
-    // void merge(blk_id target);
     bool mining();
 
     void publishBlock(uint16_t ctr, nonce_t nonce);
     void displayBlockChain();
     void saveBlockChain();
-
-    std::vector<Block> reserve;
 
  public:
     Selfish() : Client() {

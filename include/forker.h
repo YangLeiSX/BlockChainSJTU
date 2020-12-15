@@ -1,7 +1,7 @@
 /**
  * @file forker.h
  * @author Yang Lei (yangleisx@sjtu.edu.cn)
- * @brief 
+ * @brief Definition of Attacker in Fork Attack
  * @version 0.1
  * @date 2020-12-09
  * 
@@ -17,10 +17,15 @@
 
 #include "./client.h"
 
+/**
+ * @brief Definition of Attacker in Fork Attack.
+ * Inherit from Class Client.
+ * 
+ */
 class Forker : public Client {
  protected:
+    // Overloaded Function
     void synchro(std::vector<Block> &recv);
-
     void displayWelcome();
     void saveBlockChain();
 
